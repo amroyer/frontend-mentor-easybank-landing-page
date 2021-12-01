@@ -15,4 +15,4 @@
 .DS_Store
 
 # Don't track challenge files
-./challenge
+challenge/

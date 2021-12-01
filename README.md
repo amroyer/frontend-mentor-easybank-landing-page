@@ -42,7 +42,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [github.com/amroyer/frontend-mentor-easybank-landing-page](https://github.com/amroyer/frontend-mentor-easybank-landing-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [noisy-bite.surge.sh](https://noisy-bite.surge.sh)
 
 ## My process
 
