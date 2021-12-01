@@ -1,0 +1,103 @@
+/* Font import */
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+/* Theme */
+
+:root {
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
+
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html,
+body {
+  background-color: var(--very-light-gray);
+  color: var(--grayish-blue);
+  font-family: "Public Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--dark-blue);
+  line-height: 1.2;
+}
+
+a {
+  cursor: pointer;
+}
+
+.btn {
+  background-color: var(--lime-green);
+  border-radius: 10rem;
+  color: var(--very-light-gray);
+  padding: 0.8rem 2.2rem;
+}
+
+.header__nav,
+.header__btn {
+  display: none;
+}
+
+.intro {
+  background-image: url("./images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+.intro__heading {
+  font-size: 2.8rem;
+}
+
+.features {
+  background-color: var(--light-grayish-blue);
+}
+
+.features__heading {
+  font-size: 2rem;
+}
+
+.feature__name {
+  font-size: 1.3rem;
+}
+
+.articles__heading {
+  font-size: 2rem;
+}
+
+.article__card {
+  text-align: left;
+}
+
+.article__byline {
+  font-size: 0.7rem;
+}
+
+.article__preview {
+  font-size: 0.9rem;
+}
+
+footer {
+  background-color: var(--dark-blue);
+}
+
+footer .nav__item {
+  color: var(--very-light-gray);
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--bright-cyan);
+}
