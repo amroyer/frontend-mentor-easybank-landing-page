@@ -20,8 +20,13 @@
   </head>
   <body>
     <header class="row">
-      <img src="./images/logo.svg" alt="" />
-      <img src="./images/icon-hamburger.svg" alt="" />
+      <img src="./images/logo.svg" alt="easybank logo" class="header__logo" />
+      <img
+        src="./images/icon-hamburger.svg"
+        alt="Open navigation menu"
+        class="header__hamburger"
+        aria-hidden="true"
+      />
       <nav class="header__nav">
         <ul class="nav__list">
           <li class="nav__item"><a href="#">Home</a></li>
@@ -37,14 +42,20 @@
 
     <main>
       <div class="intro column">
-        <img src="./images/image-mockups.png" alt="" />
+        <div class="intro__image__container">
+          <img
+            src="./images/image-mockups.png"
+            alt="Phones with easybank app open"
+            class="intro__image"
+          />
+        </div>
         <h1 class="intro__heading headline">Next generation digital banking</h1>
         <p class="intro__copy">
           Take your financial life online. Your Easybank account will be a
           one-stop-shop for spending, saving, budgeting, investing, and much
           more.
         </p>
-        <a href="#" class="btn">Request Invite</a>
+        <a href="#" class="btn intro__cta">Request Invite</a>
       </div>
 
       <div class="features column">
@@ -155,33 +166,48 @@
         <ul class="nav__list row">
           <li class="nav__item">
             <a href="#"
-              ><img src="./images/icon-facebook.svg" alt="Facebook"
+              ><img
+                src="./images/icon-facebook.svg"
+                alt="Facebook"
+                class="social__icon"
             /></a>
           </li>
           <li class="nav__item">
             <a href="#"
-              ><img src="./images/icon-youtube.svg" alt="Youtube"
+              ><img
+                src="./images/icon-youtube.svg"
+                alt="Youtube"
+                class="social__icon"
             /></a>
           </li>
           <li class="nav__item">
             <a href="#"
-              ><img src="./images/icon-twitter.svg" alt="Twitter"
+              ><img
+                src="./images/icon-twitter.svg"
+                alt="Twitter"
+                class="social__icon"
             /></a>
           </li>
           <li class="nav__item">
             <a href="#"
-              ><img src="./images/icon-pinterest.svg" alt="Pinterest"
+              ><img
+                src="./images/icon-pinterest.svg"
+                alt="Pinterest"
+                class="social__icon"
             /></a>
           </li>
           <li class="nav__item">
             <a href="#"
-              ><img src="./images/icon-instagram.svg" alt="Instagram"
+              ><img
+                src="./images/icon-instagram.svg"
+                alt="Instagram"
+                class="social__icon"
             /></a>
           </li>
         </ul>
       </nav>
       <nav class="footer__nav">
-        <ul class="nav__list">
+        <ul class="nav__list column">
           <li class="nav__item"><a href="#">About Us</a></li>
           <li class="nav__item"><a href="#">Contact</a></li>
           <li class="nav__item"><a href="#">Blog</a></li>
@@ -190,7 +216,7 @@
           <li class="nav__item"><a href="#">Privacy Policy</a></li>
         </ul>
       </nav>
-      <a href="#" class="btn">Request Invite</a>
+      <a href="#" class="btn footer__cta">Request Invite</a>
       <p>© Easybank. All Rights Reserved</p>
 
       <div class="attribution">
