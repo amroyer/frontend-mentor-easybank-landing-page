@@ -19,14 +19,22 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
+    <div aria-hidden="true" class="overlay invisible"></div>
+
     <header class="row">
       <img src="./images/logo.svg" alt="easybank logo" class="header__logo" />
-      <img
-        src="./images/icon-hamburger.svg"
-        alt="Open navigation menu"
-        class="header__hamburger"
-        aria-hidden="true"
-      />
+      <div class="header__icon" aria-hidden="true">
+        <img
+          src="./images/icon-hamburger.svg"
+          alt="Open navigation menu"
+          class="header__hamburger"
+        />
+        <img
+          src="./images/icon-close.svg"
+          alt="Close navigation menu"
+          class="header__cross invisible rotated"
+        />
+      </div>
       <nav class="header__nav">
         <ul class="nav__list">
           <li class="nav__item"><a href="#">Home</a></li>
@@ -39,6 +47,16 @@
 
       <a href="#" class="btn header__btn">Request Invite</a>
     </header>
+
+    <nav class="dropdown__nav hidden" aria-hidden="true">
+      <ul class="nav__list column">
+        <li class="nav__item"><a href="#">Home</a></li>
+        <li class="nav__item"><a href="#">About</a></li>
+        <li class="nav__item"><a href="#">Contact</a></li>
+        <li class="nav__item"><a href="#">Blog</a></li>
+        <li class="nav__item"><a href="#">Careers</a></li>
+      </ul>
+    </nav>
 
     <main>
       <div class="intro column">
