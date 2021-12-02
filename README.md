@@ -57,6 +57,19 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
+One thing I didn't realize until working on this project is how little I really understood how browsers render images in HTML. For instance, I had to dig into the MDN documentation on the `img` tag to understand how to correctly size the images in the article cards. In the end, this is what I came up with for the (default) mobile styling:
+
+```css
+.article__card img {
+  height: 14rem;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+```
+
+Manually setting the height seems like a necessary evil here. The real work is done by enforcing a 100% width, together with the magical `object-fit` property. Setting `object-fit: cover` has the same effect as setting `background: cover` for a background image, but works for embedded images. This is what I'll likely do from now on whenever I need to have the browser crop an image for me.
+
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:
