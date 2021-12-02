@@ -113,6 +113,7 @@ header {
   padding: 1.7rem;
   position: fixed;
   top: 0;
+  transition: ease-in-out 500ms;
   width: 100%;
   z-index: 1;
 }
